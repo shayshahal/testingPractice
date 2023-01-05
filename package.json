@@ -4,7 +4,8 @@
   "description": "practice for odin project unit-testing lesson",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "testw": "test --watch"
   },
   "author": "Shay Shahal",
   "license": "ISC",
