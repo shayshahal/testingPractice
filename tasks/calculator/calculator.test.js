@@ -19,13 +19,13 @@ test('multiply', ()=>{
     ).toBe(a * b);
 })
 test('divide normal', ()=>{
-    let a = Math.random()*10+1, b = Math.random()*5 + 1, c = a*b;
+    let a = ~~(Math.random()*10+1), b = Math.random()*5 + 1, c = a*b;
     expect(
         calculator.divide(c, a)
     ).toBe(b);
 })
 test('divide floating', ()=>{
-    let a = Math.random()*10+1, b = Math.random(), c = a*b;
+    let a = ~~(Math.random()*10+1), b = Math.random(), c = a*b;
     expect(
         calculator.divide(c, a)
     ).toBeCloseTo(b);
